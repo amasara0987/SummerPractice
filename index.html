@@ -3,24 +3,31 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>My Player Card</title>
+ <title>Cricket Scoreboard</title>
  <link rel="stylesheet" href="style.css">
+ <link rel="icon" type="image/png" href="favicon.jfif">
 </head>
 <body>
- <main class="card">
- <img class="photo" src="photo.jpg" alt="My photo">
- <h1>James Kleo</h1>
- <p class="role">Student &middot; All-Rounder</p>
- <ul class="stats">
- <li><span>Age</span><strong>29</strong></li>
- <li><span>City</span><strong>Colombo</strong></li>
- <li><span>Hobby</span><strong>Football</strong></li>
- </ul>
- <p class="about">
- I'm studying Information Technology. I love to playing football,
- volleyball, and learning to build websites.
- </p>
- <a class="link" href="https://github.com/" target="_blank" >My Web</a>
+ <main class="board">
+ <h1>Cricket Scoreboard</h1>
+ <div class="side-by-side-container">
+  <img src="your-image.png" alt="Description of image">
+  <h2>SL VS AUS</h2>
+  <img src="your-image_1.png" alt="Description of image">
+ </div>
+ <div class="score">
+ <span id="runs">0</span> / <span id="wickets">0</span>
+ </div>
+ <p class="overs">Balls: <span id="balls">0</span></p>
+ <div class="buttons">
+ <button onclick="addRuns(1)">+1</button>
+ <button onclick="addRuns(2)">+2</button>
+ <button onclick="addRuns(4)">+4</button>
+ <button onclick="addRuns(6)">+6</button>
+ <button class="wicket" onclick="addWicket()">Wicket</button>
+ </div>
+ <button class="reset" onclick="resetGame()">Reset</button>
  </main>
+ <script src="script.js"></script>
 </body>
 </html>

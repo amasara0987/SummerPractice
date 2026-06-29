@@ -1,48 +1,53 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
  font-family: Arial, sans-serif;
- background: #43BA8D; /* Light Blue */
+ background: #0b5a3c;
+ color: #fff;
  display: flex;
  justify-content: center;
+ align-items: center;
  min-height: 100vh;
- padding: 30px;
 }
-.card {
- background: #EDD5D5;
- width: 350px;
- height: 450px;
+.board {
+ background: #000000;
+ padding: 30px 40px;
  border-radius: 16px;
- padding: 24px;
  text-align: center;
- box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
-.photo {
- width: 120px;
- height: 120px;
- border-radius: 50%;
- object-fit: cover;
- border: 4px solid #27F5C2; /* red */
-}
-h1 { margin-top: 12px; color: #2790D6; }
-.role { color: #777; margin-bottom: 16px; }
-.stats {
- list-style: none;
+h1 { margin-bottom: 16px; }
+.score { font-size: 64px; font-weight: bold; }
+.overs { margin: 8px 0 20px; opacity: 0.85; }
+.buttons {
  display: flex;
- justify-content: space-around;
- border-top: 1px solid #eee;
- border-bottom: 1px solid #eee;
- padding: 12px 0;
- margin-bottom: 16px;
+ gap: 10px;
+ justify-content: center;
+ flex-wrap: wrap;
 }
-.stats span { display: block; font-size: 12px; color: #999; }
-.stats strong { color: #0b5a3c; }
-.about { font-family: Franklin Gothic Medium; font-size: 17px; color: #444; margin-bottom: 18px; }
-.link {
- display: inline-block;
- background: #4686F2;
- color: #fff;
- text-decoration: none;
- padding: 10px 20px;
+.side-by-side-container {
+  display: flex;         /* Activates flexbox layout */
+  align-items: center;   /* Vertically centers the image and text */
+  gap: 10px;             /* Creates space between the image and text */
+}
+
+.side-by-side-container img {
+  max-width: 100px;      /* Adjusts image size as needed */
+  height: auto;
+}
+button {
+ font-size: 18px;
+ padding: 12px 18px;
+ border: none;
  border-radius: 8px;
+ background: #ffb300;
+ color: #222;
+ cursor: pointer;
 }
-.link:hover { background: #FF0000; }
+button:hover { background: #ffc845; }
+.wicket { background: #c0392b; color: #fff; }
+.wicket:hover { background: #e74c3c; }
+.reset {
+ margin-top: 18px;
+ background: #555;
+ color: #fff;
+}
+.reset:hover { background: #777; }
