@@ -3,24 +3,23 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>My Player Card</title>
+ <title>Avurudu Countdown</title>
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <main class="card">
- <img class="photo" src="photo.jpg" alt="My photo">
- <h1>James Kleo</h1>
- <p class="role">Student &middot; All-Rounder</p>
- <ul class="stats">
- <li><span>Age</span><strong>29</strong></li>
- <li><span>City</span><strong>Colombo</strong></li>
- <li><span>Hobby</span><strong>Football</strong></li>
- </ul>
- <p class="about">
- I'm studying Information Technology. I love to playing football,
- volleyball, and learning to build websites.
- </p>
- <a class="link" href="https://github.com/" target="_blank" >My Web</a>
+ <main class="box">
+ <img class="photo" src="photo.jfif" alt="My photo">
+ <h1>Avurudu Countdown</h1>
+ <h2>2027</h2>
+ <p class="sub">Sinhala &amp; Tamil New Year</p>
+ <div class="timer">
+ <div class="unit"><span id="days">0</span><small>Days</small></div>
+ <div class="unit"><span id="hours">0</span><small>Hours</small></div>
+ <div class="unit"><span id="minutes">0</span><small>Minutes</small></div>
+ <div class="unit"><span id="seconds">0</span><small>Seconds</small></div>
+ </div>
+ <p id="message"></p>
  </main>
+ <script src="script.js"></script>
 </body>
 </html>
